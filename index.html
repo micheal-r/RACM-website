@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Races & Car Meets</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #a50104;
+            padding: 1em;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            font-weight: bold;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+
+        .banner {
+            background-image: url('https://cdn.discordapp.com/attachments/988861071899107368/1257620976657633320/banner.png?ex=6685124e&is=6683c0ce&hm=eaeaef128f25166ce42f561ebc4c7126e0c1f6a3143ce5f12a0ece7b423ee0b4&');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .content {
+            background-color: #0c0c0c;
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .about {
+            width: 80%;
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        .about h2 {
+            text-align: center;
+        }
+
+        .about p {
+            text-align: left;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        .images {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .images img {
+            max-width: 150px;
+            border-radius: 10px;
+        }
+
+        .staff {
+            background-color: #0c0c0c;
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+
+        .staff h2 {
+            margin-bottom: 1em;
+        }
+
+        .cards {
+            background-color: #fff;
+            background-image: url('https://cdn.discordapp.com/attachments/988861071899107368/1257620975852458125/background.png?ex=6685124e&is=6683c0ce&hm=45a83a4e3ba664e2407a4d4c18ce18c3ebaff5192a32a8cd79f5276b2ed5db58&');
+            background-size: cover;
+            background-position: center;
+            padding: 2em;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2em;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .card {
+            background-color: #ccc;
+            color: black;
+            border-radius: 10px;
+            padding: 1em;
+            text-align: center;
+            margin-bottom: 2em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 1em;
+        }
+
+        .card h3 {
+            margin-bottom: 0.5em;
+        }
+
+        .footer {
+            background-color: #0c0c0c;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            margin-top: 2em;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+
+        .shop {
+            background-color: #fff;
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .shop h2 {
+            background-color: white;
+            color: black;
+            padding: 0.5em 1em;
+            border-radius: 10px;
+            margin-bottom: 1em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .shop .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .shop .card {
+            background-color: #ccc;
+            color: black;
+            border-radius: 10px;
+            padding: 1em;
+            text-align: center;
+            width: calc(33.33% - 1em);
+            margin-bottom: 2em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .shop .card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 1em;
+        }
+
+        .shop .card h3 {
+            margin-bottom: 0.5em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#about">About</a>
+        <a href="#staff">Staff Team</a>
+        <a href="https://racm.xyz/minecraft" target="_blank">Minecraft</a>
+        <a href="#shop">Shop</a>
+        <a href="#">Races And Car Meets</a>
+    </div>
+
+    <div class="banner">
+    </div>
+
+    <div class="content" id="about">
+        <div class="about">
+            <h2>About</h2>
+            <div class="images">
+                <img src="https://cdn.discordapp.com/attachments/988861071899107368/1257620976254849065/racm.png?ex=6685124e&is=6683c0ce&hm=12037a8715a26654129adfc4f77507f2e3889a0239d29dbadbb7162aeafdcc6d&" alt="Image 1">
+                <p>Welcome to Races & Car Meets, the ultimate community for car enthusiasts! Join us for thrilling races and exciting car meets where you can connect with fellow speed demons and asphalt warriors. Whether you’re here to show off your ride, compete in races, or just enjoy the company of like-minded individuals, you’ll find a place here with us.</p>
+                <img src="https://cdn.discordapp.com/attachments/988861071899107368/1257620976254849065/racm.png?ex=6685124e&is=6683c0ce&hm=12037a8715a26654129adfc4f77507f2e3889a0239d29dbadbb7162aeafdcc6d&" alt="Image 1">
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="staff">
+        <div class="staff">
+            <h2>Staff Team</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://images-ext-1.discordapp.net/external/OH8p_DrjFrEab7eef4KT-A9AyxwgQgQBkx3hguM_2cU/%3Fsize%3D256/https/cdn.discordapp.com/avatars/780599033991266334/58d0466731f9cd8bf6d8e377121127b0.png?format=webp&quality=lossless" alt="pfp">
+                    <h3>stunt6n (@blood6666)</h3>
+                    <p>Founder</p>
+                </div>
+                <div class="card">
+                    <img src="https://images-ext-1.discordapp.net/external/0qV8UMwUP4rSyXJQOpYiWKX-eotl-9fcLmA-peZU7q4/%3Fsize%3D256/https/cdn.discordapp.com/avatars/220187014090194944/87aafdcd7806d10b69446d06f9a951a8.png?format=webp&quality=lossless" alt="pfp">
+                    <h3>DampHikethegamer (@planesaregood)</h3>
+                    <p>Founder</p>
+                </div>
+                <div class="card">
+                    <img src="https://images-ext-1.discordapp.net/external/jPsyxjfazn92LnKbr9fuAOAT_yxx5GGvvfZCLIfjGkA/%3Fsize%3D256/https/cdn.discordapp.com/avatars/460163858128961537/c63ef066c97e5599de4aa6d9d4381f3a.png?format=webp&quality=lossless" alt="pfp">
+                    <h3>ManjotSingh123 (@manjo_banjo)</h3>
+                    <p>Co Founder</p>
+                </div>
+                <div class="card">
+                    <img src="https://images-ext-1.discordapp.net/external/uYMjrdmh1oNstBwHVc7mKwYjZZJDgDVwu6g0DQYv6ls/%3Fsize%3D256/https/cdn.discordapp.com/avatars/671528131726802945/fb31f5afae4853ece1966f55d002e224.png?format=webp&quality=lossless" alt="pfp">
+                    <h3>DiegoDaHacker (@passionisfruity)</h3>
+                    <p>Co Founder</p>
+                </div>
+                <div class="card">
+                    <img src="https://images-ext-1.discordapp.net/external/_px-90juWPUWvXaySnSzgRxCP6RPNt5fMTFstSDp2qI/%3Fsize%3D256/https/cdn.discordapp.com/avatars/872110981835268096/23942f23cb511a96cd7e6ef72b1c6fc3.png?format=webp&quality=lossless" alt="pfp">
+                    <h3>STEFPOWER1 (@stefpower)</h3>
+                    <p>Co Founder</p>
+                </div>
+                <div class="card">
+                    <img src="https://images-ext-1.discordapp.net/external/XJXyTFb_Ky3LuuIvrPPFC-FMH4ONVqOns6Tqs1lY8ms/%3Fsize%3D256/https/cdn.discordapp.com/avatars/728071204501585931/ff22020ff2d0cb81e56d42b05a3c9c50.png?format=webp&quality=lossless" alt="pfp">
+                    <h3>zlymurda (@zly4228)</h3>
+                    <p>Co Founder</p>
+                </div>
+                <div class="card">
+                    <img src="https://images-ext-1.discordapp.net/external/hX6P9SkeGMXS5x7jfu31o8zGxYozjnWuC9VjL0EqmZo/%3Fsize%3D256/https/cdn.discordapp.com/avatars/976538165273845830/f7016b197fc6438ea71c2c76cb1c0c62.png?format=webp&quality=lossless" alt="pfp">
+                    <h3>06prive (@micheal.r)</h3>
+                    <p>Staff Manager</p>
+                </div>
+                <div class="card">
+                    <img src="https://images-ext-1.discordapp.net/external/65ea8W6fZM03UZGBZ-07DmMUCgThnVKA8Z2fIhvos5c/%3Fsize%3D256/https/cdn.discordapp.com/avatars/923766645644726302/5107795a5cd4543d002335e6028625ac.gif" alt="pfp">
+                    <h3>Connor200Kk (@prokectspire)</h3>
+                    <p>Racing Manager</p>
+                </div>
+                <div class="card">
+                    <img src="https://images-ext-1.discordapp.net/external/SQzo6ztlKi6Rhf6q852wPaFg_Zr6hoapzwpQfp8XLwg/%3Fsize%3D256/https/cdn.discordapp.com/avatars/1014235243215065150/3bea89b8eb089e2399e0965b34bf572a.png?format=webp&quality=lossless" alt="pfp">
+                    <h3>nikolas4499 (@nikolas4499)</h3>
+                    <p>Manager</p>
+                </div>
+                <div class="card">
+                    <img src="https://images-ext-1.discordapp.net/external/ZGgsxUOeTZeCKlwEvaO9Tk8lVe7CbQzFV2NO7TvShqk/%3Fsize%3D256/https/cdn.discordapp.com/avatars/726825673993486370/3f472bf185df01a5b5a97718668336a7.png?format=webp&quality=lossless" alt="pfp">
+                    <h3>Deven (@deven9133)</h3>
+                    <p>Manager</p>
+                </div>
+                <div class="card">
+                    <img src="https://images-ext-1.discordapp.net/external/WOTitGDdB2xKWkR1bsEkxaumnahnF5B_Fb2cQ7g9bmo/%3Fsize%3D256/https/cdn.discordapp.com/avatars/705895513798606848/3c0106d4a45f03dc18550bd4a81b6297.png?format=webp&quality=lossless" alt="pfp">
+                    <h3>TOGZ8 (@togz8)</h3>
+                    <p>Manager</p>
+                </div>
+                <div class="card">
+                    <img src="https://images-ext-1.discordapp.net/external/eltLQ9J6KHFMGEUSs3vudxmKCrH4g3nDKudGD5b2mCM/%3Fsize%3D256/https/cdn.discordapp.com/avatars/780085582859862028/65facad2ceaadc8e4f9e928823b7dcf4.png?format=webp&quality=lossless" alt="pfp">
+                    <h3>ltxMichael (@ms75)</h3>
+                    <p>Manager</p>
+                </div>
+                <div class="card">
+                    <img src="https://images-ext-1.discordapp.net/external/JN3XembOQr7TXa6i4OqO44b3BKIrFTAhBdtdkpmFbn8/%3Fsize%3D256/https/cdn.discordapp.com/avatars/974439240551260161/7cdd6fadd70ad573f6b5b830e3a023b0.png?format=webp&quality=lossless" alt="pfp">
+                    <h3>fshsb23 (@coffee5853)</h3>
+                    <p>Supervisor</p>
+                </div>
+                <div class="card">
+                    <img src="https://images-ext-1.discordapp.net/external/7yt9UlISOGcBSWqcmjZC8EbPLQjVF_RyGwI28XvI4w4/%3Fsize%3D256/https/cdn.discordapp.com/avatars/448592645556535296/d6295e3a6f2c0626f890665bc45fbb81.png?format=webp&quality=lossless" alt="pfp">
+                    <h3>wasabiproductsions (@ghostedgray)</h3>
+                    <p>Supervisor</p>
+                </div>
+                <div class="card">
+                    <img src="https://images-ext-1.discordapp.net/external/IGbjAALkPcdyiJIMkSykcsa-ZdXvSwuXglO12DizL3A/%3Fsize%3D256/https/cdn.discordapp.com/avatars/853067860687323156/270784e17aba9b3088ea055b3b3ff21f.png?format=webp&quality=lossless" alt="pfp">
+                    <h3>clipovy (@clipyy)</h3>
+                    <p>Head of Administration</p>
+                </div>
+                <div class="card">
+                    <img src="https://images-ext-1.discordapp.net/external/bXaOCS7rgTAVesaWQgT30qQ5KSUjg2goNPiiGCjkZFM/%3Fsize%3D256/https/cdn.discordapp.com/avatars/527256756582088706/d2746163367e51c5ca22e536cfa37632.png?format=webp&quality=lossless" alt="pfp">
+                    <h3>NotCityz (@.cityz)</h3>
+                    <p>Administrator</p>
+                </div>
+                <div class="card">
+                    <img src="https://images-ext-1.discordapp.net/external/tZoGRJZp1eE036m_J1fsQuu6_UULroXAuMfYLkzem7g/%3Fsize%3D256/https/cdn.discordapp.com/avatars/858435635932037170/c262e268a10590dfb668c13fb72c39f4.png?format=webp&quality=lossless" alt="pfp">
+                    <h3>XanderBMXOOF (@.echotheprotogen)</h3>
+                    <p>Administrator</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/807399737204277278/5c6d64e600c5cfb4dcd667680fa20487.png?size=256" alt="pfp">
+                    <h3>787jjloko (@fraud22)</h3>
+                    <p>Junior Administrator</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/854517804194988052/df0a1221ce7a8c6811e162bae832ff1f.png?size=256" alt="pfp">
+                    <h3>all4jdm (@storm.la)</h3>
+                    <p>Junior Administrator</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/1140182555207946301/9eb6d5bbcd75999b46a62f13033af311.png?size=256" alt="pfp">
+                    <h3>peterthegreat27 (@peterthegreat27.)</h3>
+                    <p>Head of Moderation</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/790254318389166111/1f64b5d608e2bb25db7a2f2c0426c03c.png?size=256" alt="pfp">
+                    <h3>sandrik20103 (@ejx_)</h3>
+                    <p>Senior Moderator</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/976588336355508224/08d28ed99611ff263d91f03a0cee10e1.png?size=256" alt="pfp">
+                    <h3>itzbr9an (@itzbr9an)</h3>
+                    <p>Senior Moderator</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/1202426560758554644/078930b75ceb1a43c2ed134b4a0eea3c.png?size=256" alt="pfp">
+                    <h3>A_0verseer (@ekcabutcooler)</h3>
+                    <p>Senior Moderator</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/749509586800869418/01c208f5f652bff2dec74279277d50dd.png?size=256" alt="pfp">
+                    <h3>Yab0y_chase (@.humz.)</h3>
+                    <p>Senior Moderator</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/978566661332410428/2ccaa83a87f35a5eee264394ec0566cf.png?size=256" alt="pfp">
+                    <h3>BrodespsOfficial (@brodespsofficial)</h3>
+                    <p>Moderator</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/1162749656716038286/71c040f2e626c74bb7b8be95e6532d63.png?size=256" alt="pfp">
+                    <h3>Bruh_Hello1023 (@_777charlie)</h3>
+                    <p>Moderator</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/1045575839569428552/f4ab7ea40437296c4cd8daff9df982d0.png?size=256" alt="pfp">
+                    <h3>LUCASDOBRA7833 (@srt.789)</h3>
+                    <p>Moderator</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/984092124758831214/14774b34f68d4384f24d31fd89ae21ce.png?size=256" alt="pfp">
+                    <h3>XxAlewx23X (@akew23_)</h3>
+                    <p>Moderator</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/881601736027021344/72f4c5085a38c401464bb099f226a0be.png?size=256" alt="pfp">
+                    <h3>SimonOMG876 (@simonomg876)</h3>
+                    <p>Moderator</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/702654742777692251/8e753cd8f208b0c912fc53af3d4e4877.png?size=256" alt="pfp">
+                    <h3>STEVE2BRO (@steve2bro)</h3>
+                    <p>Moderator</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/1218984692351504385/e82c96115fa4d75f07b074b43c2087ba.png?size=256" alt="pfp">
+                    <h3>supercoolbro178 (@emergencyliblover)</h3>
+                    <p>Moderator</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/984522401389895740/ad7f3fd39979c09481b58adb2caa019f.png?size=256" alt="pfp">
+                    <h3>coolguy2313hear (@meldas01)</h3>
+                    <p>Moderator</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/1001487166209273947/9a9dfa4fd69121f34aee10593a47ba06.png?size=256" alt="pfp">
+                    <h3>jjdabossmephis1 (@_max_verstappen_33)</h3>
+                    <p>Moderator</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/1216565300041089046/5b26a3ac35bb73dda46e5623c0d1b788.png?size=256" alt="pfp">
+                    <h3>Watermelon829829 (@amvrx)</h3>
+                    <p>Junior Moderator</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/1128780466087006218/89bd982c960149b34e8dee00c34b33f2.png?size=256" alt="pfp">
+                    <h3>recrecrec1234567 (@recthefox_thefoxgod)</h3>
+                    <p>Junior Moderator</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/965213197000904754/73aa66c52bacd3043e216c39facafd73.png?size=256" alt="pfp">
+                    <h3>Jelle_VV (@jellevv)</h3>
+                    <p>Junior Moderator</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/815695369753198662/7a63e17a282fd745257b1b4bb9c46f61.png?size=256" alt="pfp">
+                    <h3>Legendarydated (@cxlopx)</h3>
+                    <p>Junior Moderator</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/876897163588816896/ac9c73103c6fcdf5d5bb4df7d9930a03.png?size=256" alt="pfp">
+                    <h3>amazon34878 (@._.fp_wavez._.)</h3>
+                    <p>Junior Moderator</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/avatars/862095875111387136/c7d1e5b44c4eac0f03f891020f57e525.png?size=256" alt="pfp">
+                    <h3>BritannicPlayz2009 (@britannicplayz2009)</h3>
+                    <p>Junior Moderator</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="shop">
+        <div class="shop">
+            <h2>Shop</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/attachments/988861071899107368/1257620975198142537/robux.png?ex=6685124d&is=6683c0cd&hm=a5173acfead1d8a07b5bc4550958d50ad2b95f519c0ad1e812e721d7247f8360&" alt="Icon 1">
+                    <h3>Premium</h3>
+                    <p>500 R$</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/attachments/988861071899107368/1257620975198142537/robux.png?ex=6685124d&is=6683c0cd&hm=a5173acfead1d8a07b5bc4550958d50ad2b95f519c0ad1e812e721d7247f8360&" alt="Icon 2">
+                    <h3>Small ad - @none</h3>
+                    <p>200 R$</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/attachments/988861071899107368/1257620975198142537/robux.png?ex=6685124d&is=6683c0cd&hm=a5173acfead1d8a07b5bc4550958d50ad2b95f519c0ad1e812e721d7247f8360&" alt="Icon 3">
+                    <h3>Median ad - @here</h3>
+                    <p>500 R$</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/attachments/988861071899107368/1257620975198142537/robux.png?ex=6685124d&is=6683c0cd&hm=a5173acfead1d8a07b5bc4550958d50ad2b95f519c0ad1e812e721d7247f8360&" alt="Icon 1">
+                    <h3>Large ad - @everyone</h3>
+                    <p>750 R$</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 RACM. All rights reserved.</p>
+        <p>By micheal.r</p>
+        <a href="https://discord.com/invite/erlc">Discord Server</a>
+        <a href="https://www.roblox.com/groups/12867661/Races-Car-Meets-I-ORIGINAL#!/about">Roblox Group</a>
+        <a href="https://racm.xyz/minecraft">Minecraft Server</a>
+    </div>
+
+</body>
+</html>
